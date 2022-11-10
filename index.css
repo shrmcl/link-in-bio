@@ -1,6 +1,8 @@
 body {
-    background-color: rgb(37, 36, 36);
+    background: url("https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") center/cover no-repeat ;
     color: white;
+    font-family: 'Trispace', sans-serif;
+    min-height: 100vh;
 }
 
 header {
@@ -12,7 +14,6 @@ header {
 
 header > img {
     border-radius: 100%;
-    border: 1px solid rgb(30, 75, 255);
 }
 
 ul {
@@ -23,15 +24,25 @@ ul {
 }
 
 ul > li {
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgba(255, 255, 255, 0.50);
     border-radius: 5em;
     padding: 1em;
     margin: 1em auto;
-    box-shadow: 0 0 0.5em #000a;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.165);
     text-align: center;
+    backdrop-filter: blur(20px) ;
 }
 
 ul > li > a {
-    color: black;
+    color: rgb(17, 17, 17);
     text-decoration: none;
+}
+
+.icon {
+    width: 1em;
+    height: auto;
 }
